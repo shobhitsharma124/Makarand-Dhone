@@ -1,0 +1,96 @@
+<div class="container-fluid">
+  <div class="row">
+    
+  </div>
+ 
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+          <img src="http://placehold.it/128x128" width="150" height="150" class="rounded-circle p-2 d-inline-block align-top" alt="">
+        </a>
+        <button
+          class="navbar-toggler d-lg-none ml-auto"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapsibleNavId"
+          aria-controls="collapsibleNavId"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item mx-auto">
+              <a
+                class="nav-item nav-link "
+                (click)="landingpage()"
+              >
+                Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-item nav-link "
+                (click)="placeAppointment()"
+              >
+                Place Appointment
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-item nav-link "
+                (click)="viewAppointment()"
+              >
+                View Appointment
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-item nav-link "
+                (click)="contactUspage()"
+              >
+                Contact Us
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+  
+
+      <!-- SIDEBAR -->
+  <div class="row">
+    <div class="col-sm-3">
+      <div class="sidebar">
+        <div class="nav navbar-nav">
+          <button
+            class="nav-item nav-link btn btn-block btn-dark my-2 my-md-4"
+            (click)="landingpage()"
+          >
+            Home
+          </button>
+          <button
+            class="nav-item nav-link btn btn-block btn-dark my-2 my-md-4"
+            (click)="placeAppointment()"
+          >
+            Place Appointment
+          </button>
+          <button
+            class="nav-item nav-link btn btn-block btn-dark my-2 my-md-4"
+            (click)="viewAppointment()"
+          >
+            View Appointment
+          </button>
+          <button
+            class="nav-item nav-link btn btn-block btn-dark my-2 my-md-4"
+            (click)="contactUspage()"
+          >
+            Contact Us
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-9"><router-outlet></router-outlet></div>
+  </div>
+</div>

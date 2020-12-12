@@ -1,0 +1,10 @@
+.rounded-circle {
+  padding: 20px;
+  margin: auto;
+}
+.logo {
+  width: 100%;
+}
+a:hover{
+  cursor: pointer;
+}
